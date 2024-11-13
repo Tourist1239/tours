@@ -21,7 +21,105 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="tolkyn love (2).html" data-lang="nav-home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/* Адаптивность для планшетов */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #booking-form {
+        padding: 20px;
+    }
+}
+
+/* Адаптивность для маленьких планшетов */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    #booking-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-control, .form-select {
+        padding: 10px;
+    }
+
+    .details-btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.8em;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .card-container, .card-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #booking-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-control, .form-select {
+        padding: 8px;
+    }
+
+    #submit-btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .details-btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+.html" data-lang="nav-home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="2 стр.html" data-lang="nav-destinations">Destinations</a></li>
                         <li class="nav-item"><a class="nav-link" href="available-tours.html" data-lang="nav-tours">Available Tours</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacts.html" data-lang="nav-contacts">Contacts</a></li>
