@@ -1,0 +1,376 @@
+.hidden { 
+    display: none;
+}
+
+.star {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.time {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+}
+
+#extra-content {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    background-image: url('https://bronix.ua/uploads/site-images/69f7c60e8b86455f1b73ee6eed819b8a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.3s;
+}
+
+#contact-info ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#contact-info ul li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 200px;
+    margin-bottom: 15px;
+}
+
+#contact-info ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+button.btn-secondary {
+    background-color: #95a5a6;
+    border-color: #95a5a6;
+}
+
+button.btn-info {
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+button.btn-warning {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+#stars {
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.star {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
+.star:hover {
+    color: #e67e22;
+}
+
+#weather {
+    background-color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#weather h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#weatherResult {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.weather-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-grow: 1;
+    min-width: 160px;
+    margin: 10px 0;
+}
+
+.weather-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.weather-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.weather-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.weather-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.weather-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.weather-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.weather-item i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.weather-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+#cityInput {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#cityInput:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+#getWeatherBtn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#getWeatherBtn:hover {
+    background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #booking-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    #booking-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-control, .form-select {
+        padding: 10px;
+    }
+
+    .details-btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.8em;
+    }
+
+    .tour-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .card-container, .card-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #booking-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-control, .form-select {
+        padding: 8px;
+    }
+
+    #submit-btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .details-btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
